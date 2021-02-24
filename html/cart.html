@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript" async="" src="../js/nav-bar.js"></script>
+<script type="text/javascript" async="" src="../js/cart.js"></script>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="../css/main.css" rel="stylesheet">
+<link href="../css/cart.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title> 
+       Cart
+    </title> 
+	<link rel = "icon" href ="../images/logo.png" type = "image/x-icon"> 
+
+</head>
+
+<body>
+   <!-- Navigation -->
+<header class="header" style="background:transparent;">
+  <a href="http://singh1v7.myweb.cs.uwindsor.ca/comp2707/assignments/finalproject/html/home.html" class="logo" style="color:white;">DaljeetArt</a>
+  <ul class="menu"> 
+    <div id="myLinks">
+    <li><a href="./home.html" style="color:white;">Home</a></li>
+    <li><a href="./inventory.html" style="color:white;">Inventory</a></li>
+    <li><a href="./signin.html" style="color:white;">Sign in</a></li>
+    <li><a href="./aboutus.html" style="color:white;">About Us</a></li>
+    <li><a href="./cart.html" class="active" style="color:white;"><i class="fa fa-shopping-cart" style="padding:0;"></i>Cart</a></li>
+	</div>
+	<div class="container" onclick="myFunction2(this)">
+    <a href="javascript:void(0);" class="icon" id="bar-icon" onclick="myFunction()">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div></a>
+    </div>
+  </ul>
+  <script>
+    function myFunction2(x) 
+	{
+        x.classList.toggle("change");
+    }
+</script>
+</header>
+
+
+<!-- Page Wrapper -->
+<div class="page-wrapper">
+
+
+ <div class="about-header">
+    <h1 style="text-align:center;">Cart<h1>
+ </div>
+ 
+ 
+<section class="cart-wrapper">
+    <div class="cart-row">
+      <div class="cart-column">
+        <h1>Your Order</h1>
+        <div class="cart-item" id="item">
+          <img src="../images/set-e.jpg">
+          <p>Painting Set</p>
+          <p>$200.00</p>
+          <input class="quan-inp" type="number" name="quantity" id="no-of-items" value="1" min="1" max="6" step="1">
+		  <input class="button-rmv" type="button" value="&#128465;" onclick="RemoveItem()">
+        </div>
+        <div class="cart-item" id="item1">
+          <img src="../images/brush-set-e.jpg" alt="">
+          <p>Paint Set</p>
+          <p>$20.00</p>
+          <input class="quan-inp" type="number" name="quantity" id="no-of-items" value="1" min="1" max="6" step="1">
+		  <input class="button-rmv" type="button" value="&#128465;" onclick="RemoveItem1()">
+        </div>
+        <div class="cart-item" id="item2">
+          <img src="../images/pen-set-e.jpg" alt="">
+          <p>Pen Set</p>
+          <p>$50.00</p>
+          <input class="quan-inp" type="number" name="quantity" id="no-of-items" value="1" min="1" max="6" step="1">
+		  <input class="button-rmv" type="button" value="&#128465;" onclick="RemoveItem2()">
+        </div>
+        <hr>
+      </div>
+      <div class="cart-column2">
+        <h3>Total Amount</h3>
+        <div class="cart-row1">
+          <div class="cart-col">
+            <h5>Subtotals</h5>
+            <h5 id="item3">$200.00</h5>
+			<h5 id="item4">$20.00</h5>
+			<h5 id="item5">$50.00</h5>
+          </div>
+          <div class="cart-col">
+            <h5>Shipping</h5>
+            <h5>$29.99</h5>
+          </div>
+        </div>
+        <h3>Totals &nbsp; &nbsp; $300</h3>
+        <div class="buttons">
+          <a class="button-checkout" href="http://singh1v7.myweb.cs.uwindsor.ca/comp2707/assignments/finalproject/html/thank.html">Checkout</a>
+          <a class="continue" href="http://singh1v7.myweb.cs.uwindsor.ca/comp2707/assignments/finalproject/html/inventory.html">Continue Shopping</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+<!-- Site footer -->
+<footer class="site-footer">
+    <div class="container3">
+        <div class="footer-row">
+         <div class="footer1">
+            <a style="font-size: 120%; padding-top:10px; margin:0" href="http://singh1v7.myweb.cs.uwindsor.ca/comp2707/assignments/finalproject/html/home.html">Daljeet Art Store</a>
+			<h6 style="color:#d3d3d3;  padding-top:30px; margin:0;">Official Art Website</h6>
+         </div>
+
+         <div class="footer2">
+            <ul class="footer-links">
+              <li><a href="http://singh1v7.myweb.cs.uwindsor.ca/comp2707/assignments/finalproject/html/home.html" >Home</a></li>
+              <li><a href="http://singh1v7.myweb.cs.uwindsor.ca/comp2707/assignments/finalproject/html/inventory.html" >Inventory</a></li>
+              <li><a href="http://singh1v7.myweb.cs.uwindsor.ca/comp2707/assignments/finalproject/html/signin.html" >Sign in</a></li>
+              <li><a href="http://singh1v7.myweb.cs.uwindsor.ca/comp2707/assignments/finalproject/html/aboutus.html">About Us</a></li>
+              <li><a href="http://singh1v7.myweb.cs.uwindsor.ca/comp2707/assignments/finalproject/html/cart.html" >Cart</a></li>
+            </ul>
+         </div>
+		 <div class="footer3">
+              <a href="http://fb.com" target="_blank" class="fa fa-facebook"></a>
+              <a href="http://twitter.com" target="_blank"  class="fa fa-twitter"></a>
+			  <a href="http://github.com/daljeet-sandhu" target="_blank"  class="fa fa-github"></a>
+			  <p class="copyright-text">Copyright @
+                 <a href="http://singh1v7.myweb.cs.uwindsor.ca/comp2707/assignments/finalproject/html/aboutus.html">Daljeet Singh</a>
+		      </p>
+		 </div>  
+
+     </div>
+     </div>
+</footer>
+
+</div>
+
+
+</body>
+</html>

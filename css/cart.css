@@ -1,0 +1,28 @@
+img {
+    width: 10%;
+}
+
+@media screen and (max-width: 530px) {
+.cart-wrapper{
+	padding:0;	
+}}
+
+.quan-inp{
+    color: white;
+    font-size: 20px;
+    height: 25px;
+    margin: 16px 0;
+    border: 0px;
+    border-radius: 4px;font-weight: bold;
+    text-align: center;
+    background: rgb(36, 35, 35);   
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons>a {
+    text-decoration: none;
+}
